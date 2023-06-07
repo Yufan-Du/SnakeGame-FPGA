@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun  5 18:15:44 2023
+# Process ID: 7516
+# Current directory: E:/FPGA/nowone/SnakeGame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23520 E:\FPGA\nowone\SnakeGame\SnakeGame.xpr
+# Log file: E:/FPGA/nowone/SnakeGame/vivado.log
+# Journal file: E:/FPGA/nowone/SnakeGame\vivado.jou
+# Running On: LAPTOP-LQ37KROC, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 29909 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/nowone/SnakeGame/SnakeGame.xpr
+update_compile_order -fileset sources_1
+archive_project E:/FPGA/nowone/SnakeGame.xpr.zip -temp_dir E:/FPGA/nowone/SnakeGame/.Xil/Vivado-7516-LAPTOP-LQ37KROC -force -include_local_ip_cache
+launch_simulation
+source dist_mem_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top draw_line_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source draw_line_tb.tcl
+run 1000 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top food_gen_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source food_gen_tb.tcl
+run 1000 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top game_state_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_sim
+update_compile_order -fileset sim_1
+launch_simulation
+source game_state_tb.tcl
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top root_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source root_tb.tcl
+update_compile_order -fileset sim_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top snake_men_control_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source snake_men_control_tb.tcl
+run 1000 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top track_update_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source track_update_tb.tcl
+run 1000 us
+close_sim

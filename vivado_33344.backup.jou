@@ -1,0 +1,164 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jun  4 12:14:55 2023
+# Process ID: 33344
+# Current directory: E:/FPGA/nowone/SnakeGame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14348 E:\FPGA\nowone\SnakeGame\SnakeGame.xpr
+# Log file: E:/FPGA/nowone/SnakeGame/vivado.log
+# Journal file: E:/FPGA/nowone/SnakeGame\vivado.jou
+# Running On: LAPTOP-LQ37KROC, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 29909 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/nowone/SnakeGame/SnakeGame.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+close [ open E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/state.v w ]
+add_files E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/state.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/vga_gen.v w ]
+add_files E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/vga_gen.v
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_3
+set_property -dict [list \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {12} \
+] [get_ips blk_mem_gen_3]
+generate_target {instantiation_template} [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_3] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+launch_runs blk_mem_gen_3_synth_1 -jobs 16
+wait_on_run blk_mem_gen_3_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_4
+set_property -dict [list \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {12} \
+] [get_ips blk_mem_gen_4]
+generate_target {instantiation_template} [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
+launch_runs blk_mem_gen_4_synth_1 -jobs 16
+wait_on_run blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_5
+set_property -dict [list \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {12} \
+] [get_ips blk_mem_gen_5]
+generate_target {instantiation_template} [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_5] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci]
+launch_runs blk_mem_gen_5_synth_1 -jobs 16
+wait_on_run blk_mem_gen_5_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_3
+set_property -dict [list \
+  CONFIG.data_width {12} \
+  CONFIG.depth {65536} \
+] [get_ips dist_mem_gen_3]
+generate_target {instantiation_template} [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_3] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci]
+launch_runs dist_mem_gen_3_synth_1 -jobs 16
+wait_on_run dist_mem_gen_3_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.data_width {12} [get_ips dist_mem_gen_2]
+generate_target all [get_files  E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_2] }
+export_ip_user_files -of_objects [get_files E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_2_synth_1
+launch_runs dist_mem_gen_2_synth_1 -jobs 16
+wait_on_run dist_mem_gen_2_synth_1
+export_simulation -of_objects [get_files E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.memory_type {rom} [get_ips dist_mem_gen_3]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_3] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_3_synth_1
+launch_runs dist_mem_gen_3_synth_1 -jobs 16
+wait_on_run dist_mem_gen_3_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.memory_type {rom} [get_ips dist_mem_gen_2]
+generate_target all [get_files  E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_2] }
+export_ip_user_files -of_objects [get_files E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_2_synth_1
+launch_runs dist_mem_gen_2_synth_1 -jobs 16
+wait_on_run dist_mem_gen_2_synth_1
+export_simulation -of_objects [get_files E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+close_design
+set_property -dict [list \
+  CONFIG.Coe_File {E:/FPGA/start.coe} \
+  CONFIG.Load_Init_File {true} \
+] [get_ips blk_mem_gen_3]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_3] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_3_synth_1
+launch_runs blk_mem_gen_3_synth_1 -jobs 16
+wait_on_run blk_mem_gen_3_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.coefficient_file {E:/FPGA/gameover.coe} [get_ips dist_mem_gen_3]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_3] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_3_synth_1
+launch_runs dist_mem_gen_3_synth_1 -jobs 16
+wait_on_run dist_mem_gen_3_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/dist_mem_gen_3/dist_mem_gen_3.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.Coe_File {E:/FPGA/menu.coe} \
+  CONFIG.Load_Init_File {true} \
+] [get_ips blk_mem_gen_4]
+generate_target all [get_files  e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_4_synth_1
+launch_runs blk_mem_gen_4_synth_1 -jobs 16
+wait_on_run blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files e:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -directory E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files -ipstatic_source_dir E:/FPGA/nowone/SnakeGame/SnakeGame.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/modelsim} {questa=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/questa} {riviera=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/riviera} {activehdl=E:/FPGA/nowone/SnakeGame/SnakeGame.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

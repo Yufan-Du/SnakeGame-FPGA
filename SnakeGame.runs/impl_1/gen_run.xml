@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685936634">
+  <File Type="ROUTE-PWR" Name="direction_judgement_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="direction_judgement_top.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="direction_judgement_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="direction_judgement_top_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="direction_judgement_top.msk"/>
+  <File Type="ROUTE-CLK" Name="direction_judgement_top_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="direction_judgement_top.vdi"/>
+  <File Type="BG-BIT" Name="direction_judgement_top.bit"/>
+  <File Type="BG-DRC" Name="direction_judgement_top.drc"/>
+  <File Type="BG-BGN" Name="direction_judgement_top.bgn"/>
+  <File Type="BG-BIN" Name="direction_judgement_top.bin"/>
+  <File Type="BITSTR-RBT" Name="direction_judgement_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="direction_judgement_top.nky"/>
+  <File Type="BITSTR-BMM" Name="direction_judgement_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="direction_judgement_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="direction_judgement_top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="direction_judgement_top.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="direction_judgement_top.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="direction_judgement_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="direction_judgement_top.hwdef"/>
+  <File Type="PLACE-IO" Name="direction_judgement_top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="direction_judgement_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="direction_judgement_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="direction_judgement_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="direction_judgement_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="direction_judgement_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="direction_judgement_top_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="direction_judgement_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="direction_judgement_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="direction_judgement_top_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="direction_judgement_top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="direction_judgement_top_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="direction_judgement_top_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="direction_judgement_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="direction_judgement_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="direction_judgement_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="direction_judgement_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="direction_judgement_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="direction_judgement_top_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="direction_judgement_top_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="direction_judgement_top_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="direction_judgement_top_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="direction_judgement_top_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="direction_judgement_top_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="direction_judgement_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="direction_judgement_top_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="direction_judgement_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="direction_judgement_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="direction_judgement_top_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="direction_judgement_top.pdi"/>
+  <File Type="RCFI_FILE" Name="direction_judgement_top.rcfi"/>
+  <File Type="CFI_FILE" Name="direction_judgement_top.cfi"/>
+  <File Type="RNPI_FILE" Name="direction_judgement_top.rnpi"/>
+  <File Type="NPI_FILE" Name="direction_judgement_top.npi"/>
+  <File Type="RBD_FILE" Name="direction_judgement_top.rbd"/>
+  <File Type="ROUTE-RQS" Name="direction_judgement_top_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="direction_judgement_top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/I2C_AV_Config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/I2C_AV_Config.v"/>
+        <Attr Name="ImportTime" Val="1683963416"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/I2C_Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/I2C_Controller.v"/>
+        <Attr Name="ImportTime" Val="1683963612"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Pulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/Pulse.v"/>
+        <Attr Name="ImportTime" Val="1683965048"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/debounce.v"/>
+        <Attr Name="ImportTime" Val="1683965030"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/drawing.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/drawing.v"/>
+        <Attr Name="ImportTime" Val="1684455532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/food_eat.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/food_eat.v"/>
+        <Attr Name="ImportTime" Val="1684772194"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/food_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/food_gen.v"/>
+        <Attr Name="ImportTime" Val="1684764357"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_state.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/game_state.v"/>
+        <Attr Name="ImportTime" Val="1684803073"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/hand_cordinate_processing.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/hand_cordinate_processing.v"/>
+        <Attr Name="ImportTime" Val="1684674638"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ov7670_capture.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/ov7670_capture.v"/>
+        <Attr Name="ImportTime" Val="1683963152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/pixel_thresholding_satisfied.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/pixel_thresholding_satisfied.v"/>
+        <Attr Name="ImportTime" Val="1684718218"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/root.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/root.v"/>
+        <Attr Name="ImportTime" Val="1684763603"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/snake_mem_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/snake_mem_control.v"/>
+        <Attr Name="ImportTime" Val="1684764269"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/state.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/track_update.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/sources_1/new/track_update.v"/>
+        <Attr Name="ImportTime" Val="1684804051"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga_driver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/vga_driver.v"/>
+        <Attr Name="ImportTime" Val="1684682218"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/direction_judgement_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/sources_1/new/direction_judgement_top.v"/>
+        <Attr Name="ImportTime" Val="1684721406"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SnakeGame/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PKU/FPGA/SnakeGame/archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1684806316"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <File Path="$PPRDIR/../../start.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../gameover.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../menu.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="direction_judgement_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/constrs_1/new/constr.xdc"/>
+        <Attr Name="ImportTime" Val="1684770456"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/new/ov7670_test.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ov7670_test/ov7670_test.srcs/constrs_1/new/ov7670_test.xdc"/>
+        <Attr Name="ImportTime" Val="1684675090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constr.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/track_update.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../SnakeGame.srcs/utils_1/imports/synth_1/track_update.dcp"/>
+        <Attr Name="ImportTime" Val="1684803077"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="sqrt_ip"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_4"/>
+</GenRun>

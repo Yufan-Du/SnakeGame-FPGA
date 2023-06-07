@@ -1,0 +1,277 @@
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+track update: time:                   0 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   0 x:128 y:128 dis:   0
+track update: time:                   0 start:          0 end          1 num:          1
+track update: time:                   0 last_x:128 last_y:128
+track update: time:                   0 total_len:          0 given_len       100 del_len:   0
+track update: time:                   0 x1:  x y1:  x x2:  x y2:  x draw0 setx finish:x
+track update: dis: x:  x y:  x
+track update-input: hand x:150 hand y:160
+track update: time:                   5 x1:  x y1:  x x2:  x y2:  x draw0 setx finish:0
+WARNING in track_update_tb.uut.u3.mem.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in track_update_tb.uut.u3.mem.inst is       65535
+track update: time:                   5 is_write:1 out_x:128 out_y:128 out_dis:   0 addr:   0 x:128 y:128 dis:   0
+track update-input: hand x:128 hand y:128
+track update: dis: x:  0 y:  0
+track update: time:               10115 is_write:0 out_x:128 out_y:128 out_dis:   0 addr:   0 x:128 y:128 dis:   0
+track update-input: hand x:129 hand y:129
+track update: dis: x:  1 y:  1
+track update-input: hand x:130 hand y:130
+track update: dis: x:  2 y:  2
+track update-input: hand x:131 hand y:131
+track update: dis: x:  3 y:  3
+track update-input: hand x:132 hand y:132
+track update: dis: x:  4 y:  4
+track update-input: hand x:133 hand y:133
+track update: dis: x:  5 y:  5
+track update-input: hand x:134 hand y:134
+track update: dis: x:  6 y:  6
+track update-input: hand x:135 hand y:135
+track update: dis: x:  7 y:  7
+track update-input: hand x:136 hand y:136
+track update: dis: x:  8 y:  8
+track update-input: hand x:137 hand y:137
+track update: dis: x:  9 y:  9
+track update-input: hand x:138 hand y:138
+track update: dis: x: 10 y: 10
+track update-input: hand x:139 hand y:139
+track update: dis: x: 11 y: 11
+track update-input: hand x:140 hand y:140
+track update: dis: x: 12 y: 12
+track update-input: hand x:141 hand y:141
+track update: dis: x: 13 y: 13
+track update: time:              140455 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   1 x:141 y:141 dis:  18
+track update: time:              140455 x1:128 y1:128 x2:141 y2:141 draw1 set1 finish:0
+track update: time:              140455 start:          0 end          2 num:          2
+track update: time:              140465 is_write:1 out_x:141 out_y:141 out_dis:  18 addr:   1 x:141 y:141 dis:  18
+track update: time:              140735 x1:128 y1:128 x2:141 y2:141 draw1 set1 finish:1
+track update: time:              140745 x1:128 y1:128 x2:141 y2:141 draw0 set1 finish:0
+track update: time:              140745 is_write:0 out_x:141 out_y:141 out_dis:  18 addr:   1 x:141 y:141 dis:  18
+track update: time:              140745 last_x:141 last_y:141
+track update: time:              140745 total_len:         18 given_len       100 del_len:   0
+track update: dis: x:  0 y:  0
+track update-input: hand x:142 hand y:142
+track update: dis: x:  1 y:  1
+track update-input: hand x:143 hand y:143
+track update: dis: x:  2 y:  2
+track update-input: hand x:144 hand y:144
+track update: dis: x:  3 y:  3
+track update-input: hand x:145 hand y:145
+track update: dis: x:  4 y:  4
+track update-input: hand x:146 hand y:146
+track update: dis: x:  5 y:  5
+track update-input: hand x:147 hand y:147
+track update: dis: x:  6 y:  6
+track update-input: hand x:148 hand y:148
+track update: dis: x:  7 y:  7
+track update-input: hand x:149 hand y:149
+track update: dis: x:  8 y:  8
+track update-input: hand x:150 hand y:150
+track update: dis: x:  9 y:  9
+track update-input: hand x:151 hand y:151
+track update: dis: x: 10 y: 10
+track update-input: hand x:152 hand y:152
+track update: dis: x: 11 y: 11
+track update-input: hand x:153 hand y:153
+track update: dis: x: 12 y: 12
+track update-input: hand x:154 hand y:154
+track update: dis: x: 13 y: 13
+track update: time:              270585 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   2 x:154 y:154 dis:  36
+track update: time:              270585 x1:141 y1:141 x2:154 y2:154 draw1 set1 finish:0
+track update: time:              270585 start:          0 end          3 num:          3
+track update: time:              270595 is_write:1 out_x:154 out_y:154 out_dis:  36 addr:   2 x:154 y:154 dis:  36
+track update: time:              270865 x1:141 y1:141 x2:154 y2:154 draw1 set1 finish:1
+track update: time:              270875 x1:141 y1:141 x2:154 y2:154 draw0 set1 finish:0
+track update: time:              270875 is_write:0 out_x:154 out_y:154 out_dis:  36 addr:   2 x:154 y:154 dis:  36
+track update: time:              270875 last_x:154 last_y:154
+track update: time:              270875 total_len:         36 given_len       100 del_len:   0
+track update: dis: x:  0 y:  0
+track update-input: hand x:155 hand y:155
+track update: dis: x:  1 y:  1
+track update-input: hand x:156 hand y:156
+track update: dis: x:  2 y:  2
+track update-input: hand x:157 hand y:157
+track update: dis: x:  3 y:  3
+track update-input: hand x:158 hand y:158
+track update: dis: x:  4 y:  4
+track update-input: hand x:158 hand y:157
+track update: dis: x:  4 y:  3
+track update-input: hand x:158 hand y:156
+track update: dis: x:  4 y:  2
+track update-input: hand x:158 hand y:155
+track update: dis: x:  4 y:  1
+track update-input: hand x:158 hand y:154
+track update: dis: x:  4 y:  0
+track update-input: hand x:158 hand y:153
+track update: dis: x:  4 y:  1
+track update-input: hand x:158 hand y:152
+track update: dis: x:  4 y:  2
+track update-input: hand x:158 hand y:151
+track update: dis: x:  4 y:  3
+track update-input: hand x:158 hand y:150
+track update: dis: x:  4 y:  4
+WARNING in track_update_tb.uut.u3.mem.inst at time            395885000 ns: 
+Reading from out-of-range address. Max address in track_update_tb.uut.u3.mem.inst is       65535
+WARNING in track_update_tb.uut.u3.mem.inst at time            395895100 ns: 
+Reading from out-of-range address. Max address in track_update_tb.uut.u3.mem.inst is       65535
+track update-input: hand x:158 hand y:149
+track update: dis: x:  4 y:  5
+track update-input: hand x:158 hand y:148
+track update: dis: x:  4 y:  6
+track update-input: hand x:158 hand y:147
+track update: dis: x:  4 y:  7
+track update-input: hand x:158 hand y:146
+track update: dis: x:  4 y:  8
+track update-input: hand x:158 hand y:145
+track update: dis: x:  4 y:  9
+track update-input: hand x:158 hand y:144
+track update: dis: x:  4 y: 10
+track update-input: hand x:158 hand y:143
+track update: dis: x:  4 y: 11
+track update-input: hand x:158 hand y:142
+track update: dis: x:  4 y: 12
+track update-input: hand x:158 hand y:141
+track update: dis: x:  4 y: 13
+track update-input: hand x:158 hand y:140
+track update: dis: x:  4 y: 14
+track update-input: hand x:158 hand y:139
+track update: dis: x:  4 y: 15
+track update-input: hand x:158 hand y:138
+track update: dis: x:  4 y: 16
+track update-input: hand x:158 hand y:137
+track update: dis: x:  4 y: 17
+track update-input: hand x:158 hand y:136
+track update: dis: x:  4 y: 18
+track update: time:              530845 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   3 x:158 y:136 dis:  54
+track update: time:              530845 x1:154 y1:154 x2:158 y2:136 draw1 set1 finish:0
+track update: time:              530845 start:          0 end          4 num:          4
+track update: time:              530855 is_write:1 out_x:158 out_y:136 out_dis:  54 addr:   3 x:158 y:136 dis:  54
+track update: time:              531085 x1:154 y1:154 x2:158 y2:136 draw1 set1 finish:1
+track update: time:              531095 x1:154 y1:154 x2:158 y2:136 draw0 set1 finish:0
+track update: time:              531095 is_write:0 out_x:158 out_y:136 out_dis:  54 addr:   3 x:158 y:136 dis:  54
+track update: time:              531095 last_x:158 last_y:136
+track update: time:              531095 total_len:         54 given_len       100 del_len:   0
+track update: dis: x:  0 y:  0
+track update-input: hand x:158 hand y:135
+track update: dis: x:  0 y:  1
+track update-input: hand x:158 hand y:134
+track update: dis: x:  0 y:  2
+track update-input: hand x:158 hand y:133
+track update: dis: x:  0 y:  3
+track update-input: hand x:158 hand y:132
+track update: dis: x:  0 y:  4
+track update-input: hand x:158 hand y:131
+track update: dis: x:  0 y:  5
+track update-input: hand x:158 hand y:130
+track update: dis: x:  0 y:  6
+track update-input: hand x:158 hand y:129
+track update: dis: x:  0 y:  7
+track update-input: hand x:158 hand y:128
+track update: dis: x:  0 y:  8
+track update-input: hand x:158 hand y:127
+track update: dis: x:  0 y:  9
+track update-input: hand x:158 hand y:126
+track update: dis: x:  0 y: 10
+track update-input: hand x:158 hand y:125
+track update: dis: x:  0 y: 11
+track update-input: hand x:158 hand y:124
+track update: dis: x:  0 y: 12
+track update-input: hand x:158 hand y:123
+track update: dis: x:  0 y: 13
+track update-input: hand x:158 hand y:122
+track update: dis: x:  0 y: 14
+track update-input: hand x:158 hand y:121
+track update: dis: x:  0 y: 15
+track update-input: hand x:158 hand y:120
+track update: dis: x:  0 y: 16
+track update-input: hand x:158 hand y:119
+track update: dis: x:  0 y: 17
+track update-input: hand x:158 hand y:118
+track update: dis: x:  0 y: 18
+track update: time:              711025 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   4 x:158 y:118 dis:  72
+track update: time:              711025 x1:158 y1:136 x2:158 y2:118 draw1 set1 finish:0
+track update: time:              711025 start:          0 end          5 num:          5
+track update: time:              711035 is_write:1 out_x:158 out_y:118 out_dis:  72 addr:   4 x:158 y:118 dis:  72
+track update: time:              711225 x1:158 y1:136 x2:158 y2:118 draw1 set1 finish:1
+track update: time:              711235 x1:158 y1:136 x2:158 y2:118 draw0 set1 finish:0
+track update: time:              711235 is_write:0 out_x:158 out_y:118 out_dis:  72 addr:   4 x:158 y:118 dis:  72
+track update: time:              711235 last_x:158 last_y:118
+track update: time:              711235 total_len:         72 given_len       100 del_len:   0
+track update: dis: x:  0 y:  0
+track update-input: hand x:157 hand y:119
+track update: dis: x:  1 y:  1
+track update-input: hand x:156 hand y:120
+track update: dis: x:  2 y:  2
+track update-input: hand x:155 hand y:121
+track update: dis: x:  3 y:  3
+track update-input: hand x:154 hand y:122
+track update: dis: x:  4 y:  4
+track update-input: hand x:153 hand y:123
+track update: dis: x:  5 y:  5
+track update-input: hand x:152 hand y:124
+track update: dis: x:  6 y:  6
+track update-input: hand x:151 hand y:125
+track update: dis: x:  7 y:  7
+track update-input: hand x:150 hand y:126
+track update: dis: x:  8 y:  8
+track update-input: hand x:149 hand y:127
+track update: dis: x:  9 y:  9
+track update-input: hand x:148 hand y:128
+track update: dis: x: 10 y: 10
+track update-input: hand x:147 hand y:129
+track update: dis: x: 11 y: 11
+track update-input: hand x:146 hand y:130
+track update: dis: x: 12 y: 12
+track update-input: hand x:145 hand y:131
+track update: dis: x: 13 y: 13
+track update: time:              841155 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   5 x:145 y:131 dis:  90
+track update: time:              841155 x1:158 y1:118 x2:145 y2:131 draw1 set1 finish:0
+track update: time:              841155 start:          0 end          6 num:          6
+track update: time:              841165 is_write:1 out_x:145 out_y:131 out_dis:  90 addr:   5 x:145 y:131 dis:  90
+track update: time:              841435 x1:158 y1:118 x2:145 y2:131 draw1 set1 finish:1
+track update: time:              841445 x1:158 y1:118 x2:145 y2:131 draw0 set1 finish:0
+track update: time:              841445 is_write:0 out_x:145 out_y:131 out_dis:  90 addr:   5 x:145 y:131 dis:  90
+track update: time:              841445 last_x:145 last_y:131
+track update: time:              841445 total_len:         90 given_len       100 del_len:   0
+track update: dis: x:  0 y:  0
+track update-input: hand x:144 hand y:132
+track update: dis: x:  1 y:  1
+track update-input: hand x:143 hand y:133
+track update: dis: x:  2 y:  2
+track update-input: hand x:142 hand y:134
+track update: dis: x:  3 y:  3
+track update-input: hand x:141 hand y:135
+track update: dis: x:  4 y:  4
+track update-input: hand x:140 hand y:136
+track update: dis: x:  5 y:  5
+track update-input: hand x:139 hand y:137
+track update: dis: x:  6 y:  6
+track update-input: hand x:138 hand y:138
+track update: dis: x:  7 y:  7
+track update-input: hand x:137 hand y:139
+track update: dis: x:  8 y:  8
+track update-input: hand x:136 hand y:140
+track update: dis: x:  9 y:  9
+track update-input: hand x:135 hand y:141
+track update: dis: x: 10 y: 10
+track update-input: hand x:134 hand y:142
+track update: dis: x: 11 y: 11
+track update-input: hand x:133 hand y:143
+track update: dis: x: 12 y: 12
+track update-input: hand x:132 hand y:144
+track update: dis: x: 13 y: 13
+track update: time:              971285 is_write:1 out_x:  0 out_y:  0 out_dis:   0 addr:   6 x:132 y:144 dis: 108
+track update: time:              971285 x1:145 y1:131 x2:132 y2:144 draw1 set1 finish:0
+track update: time:              971285 start:          0 end          7 num:          7
+track update: time:              971295 is_write:1 out_x:132 out_y:144 out_dis: 108 addr:   6 x:132 y:144 dis: 108
+track update: time:              971565 x1:145 y1:131 x2:132 y2:144 draw1 set1 finish:1
+track update: time:              971575 x1:145 y1:131 x2:132 y2:144 draw0 set1 finish:0
+track update: time:              971575 is_write:0 out_x:132 out_y:144 out_dis: 108 addr:   6 x:132 y:144 dis: 108
+track update: time:              971575 last_x:132 last_y:144
+track update: time:              971575 total_len:        108 given_len       100 del_len:   0
+track update: dis: x:  0 y:  0
+track update-input: hand x:131 hand y:145
+track update: dis: x:  1 y:  1
+track update-input: hand x:130 hand y:146
+track update: dis: x:  2 y:  2

@@ -1,0 +1,613 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun  5 11:43:58 2023
+# Process ID: 13524
+# Current directory: E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1
+# Command line: vivado.exe -log direction_judgement_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source direction_judgement_top.tcl
+# Log file: E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/direction_judgement_top.vds
+# Journal file: E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
+# Running On: LAPTOP-LQ37KROC, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 29909 MB
+#-----------------------------------------------------------
+source direction_judgement_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/track_update.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/track_update.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top direction_judgement_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4004
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'wen_', assumed default net type 'wire' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/drawing.v:63]
+INFO: [Synth 8-11241] undeclared symbol 'set_', assumed default net type 'wire' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/drawing.v:64]
+INFO: [Synth 8-11241] undeclared symbol 'clk_25m', assumed default net type 'wire' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:67]
+WARNING: [Synth 8-6901] identifier 'dout_red' is used before its declaration [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:41]
+WARNING: [Synth 8-6901] identifier 'dout_green' is used before its declaration [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:41]
+WARNING: [Synth 8-6901] identifier 'dout_blue' is used before its declaration [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:41]
+INFO: [Synth 8-11241] undeclared symbol 'show_flag', assumed default net type 'wire' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/vga_driver.v:112]
+INFO: [Synth 8-11241] undeclared symbol 'hand_detected', assumed default net type 'wire' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:109]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1233.828 ; gain = 408.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'direction_judgement_top' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Pulse' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/Pulse.v:22]
+	Parameter frq bound to: 200 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Pulse' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/Pulse.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/vga_driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_thresholding_satisfied' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/pixel_thresholding_satisfied.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_thresholding_satisfied' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/pixel_thresholding_satisfied.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/vga_driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hand_cordinate_processing' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/hand_cordinate_processing.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hand_cordinate_processing' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/hand_cordinate_processing.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_gen' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/vga_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_3' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_3' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_4' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/dist_mem_gen_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_4' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/dist_mem_gen_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vga_gen' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/vga_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:23]
+INFO: [Synth 8-6157] synthesizing module 'I2C_AV_Config' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_AV_Config.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_AV_Config.v:110]
+INFO: [Synth 8-6157] synthesizing module 'I2C_OV7670_RGB565_Config' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_Controller.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_Controller.v:296]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Controller' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_Controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_Controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_AV_Config' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/I2C_AV_Config.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/clk_wiz_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'reset' of module 'clk_wiz_1' is unconnected for instance 'clk_div' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:176]
+WARNING: [Synth 8-7071] port 'locked' of module 'clk_wiz_1' is unconnected for instance 'clk_div' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:176]
+WARNING: [Synth 8-7023] instance 'clk_div' of module 'clk_wiz_1' has 4 connections declared, but only 2 given [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:176]
+INFO: [Synth 8-6157] synthesizing module 'state' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'state' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/state.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'dif_set' does not match port width (2) of module 'state' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:298]
+INFO: [Synth 8-6157] synthesizing module 'game_state' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'douta' of module 'blk_mem_gen_0' is unconnected for instance 'mem_for_food_gen' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:60]
+WARNING: [Synth 8-7071] port 'dinb' of module 'blk_mem_gen_0' is unconnected for instance 'mem_for_food_gen' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:60]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_0' is unconnected for instance 'mem_for_food_gen' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:60]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'blk_mem_gen_0' is unconnected for instance 'mem_for_food_gen' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:60]
+WARNING: [Synth 8-7023] instance 'mem_for_food_gen' of module 'blk_mem_gen_0' has 15 connections declared, but only 11 given [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:60]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'reset' of module 'clk_wiz_0' is unconnected for instance 'clk_1' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:67]
+WARNING: [Synth 8-7071] port 'locked' of module 'clk_wiz_0' is unconnected for instance 'clk_1' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:67]
+WARNING: [Synth 8-7023] instance 'clk_1' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:67]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/blk_mem_gen_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'douta' of module 'blk_mem_gen_1' is unconnected for instance 'mem_for_vga' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:69]
+WARNING: [Synth 8-7071] port 'dinb' of module 'blk_mem_gen_1' is unconnected for instance 'mem_for_vga' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:69]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_1' is unconnected for instance 'mem_for_vga' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:69]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'blk_mem_gen_1' is unconnected for instance 'mem_for_vga' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:69]
+WARNING: [Synth 8-7023] instance 'mem_for_vga' of module 'blk_mem_gen_1' has 15 connections declared, but only 11 given [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:69]
+INFO: [Synth 8-6157] synthesizing module 'food_eat' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/food_eat.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'food_eat' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/food_eat.v:23]
+INFO: [Synth 8-6157] synthesizing module 'food_gen' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/food_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'food_gen' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/food_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'track_update' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:21]
+INFO: [Synth 8-6157] synthesizing module 'snake_men_control' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/snake_mem_control.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/dist_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/dist_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snake_men_control' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/snake_mem_control.v:25]
+WARNING: [Synth 8-7071] port 'value' of module 'snake_men_control' is unconnected for instance 'u1' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:98]
+WARNING: [Synth 8-7023] instance 'u1' of module 'snake_men_control' has 10 connections declared, but only 9 given [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:98]
+INFO: [Synth 8-6157] synthesizing module 'root' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/root.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sqrt_ip' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/sqrt_ip_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt_ip' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/sqrt_ip_stub.v:5]
+WARNING: [Synth 8-689] width (10) of port connection 'm_axis_dout_tdata' does not match port width (16) of module 'sqrt_ip' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/root.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'root' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/root.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_line' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/drawing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/dist_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-13524-LAPTOP-LQ37KROC/realtime/dist_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'draw_line' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/drawing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'track_update' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:21]
+WARNING: [Synth 8-7071] port 'done' of module 'track_update' is unconnected for instance 'u2' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:102]
+WARNING: [Synth 8-7071] port 'state_test' of module 'track_update' is unconnected for instance 'u2' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:102]
+WARNING: [Synth 8-7071] port 'draw' of module 'track_update' is unconnected for instance 'u2' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:102]
+WARNING: [Synth 8-7023] instance 'u2' of module 'track_update' has 15 connections declared, but only 12 given [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'game_state' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'direction_judgement_top' (0#1) [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/direction_judgement_top.v:23]
+WARNING: [Synth 8-7137] Register hand_detected_reg in module vga_driver has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/vga_driver.v:188]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register present_state_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:58]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register O_we_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:77]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register dout_red_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:41]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register dout_green_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:41]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register dout_blue_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:41]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register address_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:42]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register address_next_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:103]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register d_latch_reg in module ov7670_capture. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/ov7670_capture.v:116]
+WARNING: [Synth 8-7137] Register deling_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:195]
+WARNING: [Synth 8-7137] Register del_begin_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:200]
+WARNING: [Synth 8-7137] Register x1_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:119]
+WARNING: [Synth 8-7137] Register y1_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:120]
+WARNING: [Synth 8-7137] Register x2_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:121]
+WARNING: [Synth 8-7137] Register y2_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:122]
+WARNING: [Synth 8-7137] Register set_reg in module track_update has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/track_update.v:127]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/new/game_state.v:137]
+WARNING: [Synth 8-3917] design direction_judgement_top has port O_pwdn driven by constant 0
+WARNING: [Synth 8-3917] design direction_judgement_top has port O_reset driven by constant 1
+WARNING: [Synth 8-7129] Port dif_set[1] in module game_state is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dif_set[0] in module game_state is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1356.141 ; gain = 530.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1356.141 ; gain = 530.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1356.141 ; gain = 530.391
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1356.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/sqrt_ip/sqrt_ip/sqrt_ip_in_context.xdc] for cell 'game/u2/u2/sqrt'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/sqrt_ip/sqrt_ip/sqrt_ip_in_context.xdc] for cell 'game/u2/u2/sqrt'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'game/mem_for_food_gen'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'game/mem_for_food_gen'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'game/mem_for_vga'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'game/mem_for_vga'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'game/u2/u3/mem'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'game/u2/u3/mem'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'game/u2/u1/mem'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'game/u2/u1/mem'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'game/clk_1'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'game/clk_1'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_div'
+WARNING: [Constraints 18-619] A clock with name 'I_clk100' already exists, overwriting the previous clock with the same name. [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc:1]
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_div'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'u_frame_buffer2'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'u_frame_buffer2'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'nolabel_line145/start_pic'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'nolabel_line145/start_pic'
+Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/dist_mem_gen_4/dist_mem_gen_4/dist_mem_gen_4_in_context.xdc] for cell 'nolabel_line145/setting_menu_vga'
+Finished Parsing XDC File [e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/dist_mem_gen_4/dist_mem_gen_4/dist_mem_gen_4_in_context.xdc] for cell 'nolabel_line145/setting_menu_vga'
+Parsing XDC File [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/new/constr.xdc]
+WARNING: [Constraints 18-619] A clock with name 'I_clk100' already exists, overwriting the previous clock with the same name. [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/new/constr.xdc:9]
+Finished Parsing XDC File [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/direction_judgement_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/direction_judgement_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/ov7670_test.xdc]
+Finished Parsing XDC File [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/ov7670_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/ov7670_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/direction_judgement_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/direction_judgement_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1459.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1459.684 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'game/mem_for_food_gen' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'game/mem_for_vga' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'game/u2/u2/sqrt' at clock pin 'aclk' is different from the actual clock period '50.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1459.711 ; gain = 633.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1459.711 ; gain = 633.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for I_clk100. (constraint file  e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for I_clk100. (constraint file  e:/FPGA/nowone/SnakeGame/SnakeGame.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for game/u2/u2/sqrt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for game/mem_for_food_gen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for game/mem_for_vga. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for game/u2/u3/mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for game/u2/u1/mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for game/clk_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_div. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_frame_buffer2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for nolabel_line145/start_pic. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for nolabel_line145/setting_menu_vga. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1459.711 ; gain = 633.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'ov7670_capture'
+INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'I2C_AV_Config'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'state'
+WARNING: [Synth 8-327] inferring latch for variable 'O_satisfy_reg' [E:/FPGA/nowone/SnakeGame/SnakeGame.srcs/sources_1/imports/new/pixel_thresholding_satisfied.v:34]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                               00
+                 hold_on |                               01 |                               01
+                    done |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'ov7670_capture'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                  iSTATE |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mSetup_ST_reg' using encoding 'one-hot' in module 'I2C_AV_Config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE1 |                              010 |                               01
+                 iSTATE0 |                              100 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'state'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1459.711 ; gain = 633.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 4     
+	   3 Input   26 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 4     
+	   3 Input   10 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 7     
+	   3 Input    8 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 24    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 53    
++---Multipliers : 
+	               9x32  Multipliers := 1     
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 15    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 3     
+	   2 Input   12 Bit        Muxes := 4     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 3     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 35    
+	  62 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   6 Input    6 Bit        Muxes := 1     
+	  59 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 12    
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 156   
+	   4 Input    1 Bit        Muxes := 9     
+	  41 Input    1 Bit        Muxes := 5     
+	  60 Input    1 Bit        Muxes := 7     
+	  59 Input    1 Bit        Muxes := 1     
+	  42 Input    1 Bit        Muxes := 4     
+	  19 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP Cb3, operation Mode is: (A:0x1ffd5)*B.
+DSP Report: operator Cb3 is absorbed into DSP Cb3.
+DSP Report: operator Cb3 is absorbed into DSP Cb3.
+DSP Report: Generating DSP Cb3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Cb3 is absorbed into DSP Cb3.
+DSP Report: operator Cb3 is absorbed into DSP Cb3.
+DSP Report: Generating DSP Cb0, operation Mode is: C-A*(B:0x55).
+DSP Report: operator Cb0 is absorbed into DSP Cb0.
+DSP Report: operator Cb3 is absorbed into DSP Cb0.
+DSP Report: Generating DSP Cr3, operation Mode is: A*(B:0x6b).
+DSP Report: operator Cr3 is absorbed into DSP Cr3.
+DSP Report: Generating DSP Cr2, operation Mode is: A*(B:0x15).
+DSP Report: operator Cr2 is absorbed into DSP Cr2.
+DSP Report: Generating DSP for_ram1, operation Mode is: (D+(A:0x50))*B2.
+DSP Report: register food_y_reg is absorbed into DSP for_ram1.
+DSP Report: register food_x_reg is absorbed into DSP for_ram1.
+DSP Report: operator food_x0 is absorbed into DSP for_ram1.
+DSP Report: operator for_ram1 is absorbed into DSP for_ram1.
+DSP Report: Generating DSP hand_cordinate_debounce/temp_sum_y0, operation Mode is: (A:0x2bc)*B.
+DSP Report: operator hand_cordinate_debounce/temp_sum_y0 is absorbed into DSP hand_cordinate_debounce/temp_sum_y0.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/temp_sum_x0, operation Mode is: (A:0x2bc)*B.
+DSP Report: operator hand_cordinate_debounce/temp_sum_x0 is absorbed into DSP hand_cordinate_debounce/temp_sum_x0.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: Generating DSP hand_cordinate_debounce/prev_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+DSP Report: operator hand_cordinate_debounce/prev_x3 is absorbed into DSP hand_cordinate_debounce/prev_x3.
+WARNING: [Synth 8-3917] design direction_judgement_top has port O_pwdn driven by constant 0
+WARNING: [Synth 8-3917] design direction_judgement_top has port O_reset driven by constant 1
+WARNING: [Synth 8-7129] Port dif_set[1] in module game_state is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dif_set[0] in module game_state is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1459.711 ; gain = 633.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------------+-----------------------------------+---------------+----------------+
+|Module Name              | RTL Object                        | Depth x Width | Implemented As | 
++-------------------------+-----------------------------------+---------------+----------------+
+|I2C_OV7670_RGB565_Config | LUT_DATA                          | 256x16        | LUT            | 
+|I2C_Controller           | I2C_BIT                           | 64x1          | LUT            | 
+|direction_judgement_top  | IIC/sccb_sender/I2C_BIT           | 64x1          | LUT            | 
+|direction_judgement_top  | IIC/OV7670_RGB565_Config/LUT_DATA | 256x16        | LUT            | 
++-------------------------+-----------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pixel_thresholding_satisfied | (A:0x1ffd5)*B   | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | (PCIN>>17)+A*B  | 16     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | C-A*(B:0x55)    | 16     | 7      | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | A*(B:0x6b)      | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | A*(B:0x15)      | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|food_gen                     | (D+(A:0x50))*B2 | 7      | 8      | -      | 7      | 16     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|hand_cordinate_processing    | (A:0x2bc)*B     | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B             | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hand_cordinate_processing    | (A:0x2bc)*B     | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B             | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'I_clk100'
+WARNING: [Synth 8-565] redefining clock 'I_clk100'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1459.711 ; gain = 633.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1469.285 ; gain = 643.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1492.227 ; gain = 666.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \game/mem_for_food_gen  has unconnected pin dinb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \game/clk_1  has unconnected pin reset
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \game/mem_for_vga  has unconnected pin dinb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_div has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|food_gen                     | (D+A)'*B'    | 7      | 8      | -      | 7      | 16     | 0    | 1    | -    | 1    | 1     | 0    | 0    | 
+|hand_cordinate_processing    | A*B          | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hand_cordinate_processing    | A*B          | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|direction_judgement_top      | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | PCIN>>17+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | not(C+A*B)   | 8      | 7      | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | A*B          | 8      | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_thresholding_satisfied | A*B          | 8      | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |blk_mem_gen_2  |         1|
+|2     |clk_wiz_1      |         1|
+|3     |blk_mem_gen_0  |         1|
+|4     |clk_wiz_0      |         1|
+|5     |blk_mem_gen_1  |         1|
+|6     |dist_mem_gen_0 |         1|
+|7     |sqrt_ip        |         1|
+|8     |dist_mem_gen_1 |         1|
+|9     |blk_mem_gen_3  |         1|
+|10    |dist_mem_gen_4 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |blk_mem_gen  |     4|
+|5     |clk_wiz      |     2|
+|7     |dist_mem_gen |     3|
+|10    |sqrt_ip      |     1|
+|11    |BUFG         |     1|
+|12    |CARRY4       |   937|
+|13    |DSP48E1      |    14|
+|16    |LUT1         |   256|
+|17    |LUT2         |   691|
+|18    |LUT3         |  2387|
+|19    |LUT4         |   440|
+|20    |LUT5         |   360|
+|21    |LUT6         |   522|
+|22    |MUXF7        |    28|
+|23    |MUXF8        |    12|
+|24    |FDCE         |   461|
+|25    |FDPE         |    17|
+|26    |FDRE         |   311|
+|27    |FDSE         |     5|
+|28    |LDC          |     1|
+|29    |IBUF         |    13|
+|30    |IOBUF        |     1|
+|31    |OBUF         |    24|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.719 ; gain = 681.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 4 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1507.719 ; gain = 578.398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.719 ; gain = 681.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1519.797 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 993 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1523.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LDC => LDCE: 1 instance 
+
+Synth Design complete, checksum: 124c6d1f
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 53 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1523.438 ; gain = 1079.668
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/nowone/SnakeGame/SnakeGame.runs/synth_1/direction_judgement_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file direction_judgement_top_utilization_synth.rpt -pb direction_judgement_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  5 11:45:03 2023...

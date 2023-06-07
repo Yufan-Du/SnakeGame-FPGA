@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SnakeGame.gen/sources_1/ip/clk_wiz_0_1" --include "../../../../SnakeGame.gen/sources_1/ip/clk_wiz_1" \
+"../../../../SnakeGame.gen/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" \
+"../../../../SnakeGame.gen/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v" \
+"../../../../SnakeGame.srcs/sources_1/new/drawing.v" \
+"../../../../SnakeGame.srcs/sources_1/new/root.v" \
+"../../../../SnakeGame.srcs/sources_1/new/snake_mem_control.v" \
+"../../../../SnakeGame.srcs/sources_1/new/track_update.v" \
+"../../../../SnakeGame.srcs/sim_1/new/track_update_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

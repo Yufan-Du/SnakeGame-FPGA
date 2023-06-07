@@ -1,0 +1,12 @@
++====================+====================+=======================================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                                   |
++====================+====================+=======================================+
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_blue_reg[3]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_blue_reg[2]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_green_reg[3]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_green_reg[1]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_green_reg[2]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_green_reg[0]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_blue_reg[0]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | vga_display/show_pixel_blue_reg[1]/D  |
++--------------------+--------------------+---------------------------------------+
